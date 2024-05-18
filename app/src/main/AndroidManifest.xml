@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Skill_Improvement"
         tools:targetApi="31">
         <activity
+            android:name=".myscript.MyScriptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashBoard.DashBoardActivity"
+            android:exported="false" />
+        <activity
             android:name=".padView.HandWritingActivityMain"
             android:exported="false" />
         <activity

@@ -53,11 +53,11 @@ public class WritingView extends View {
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
         mPaint.setStrokeWidth(10);
-        mPaint.setColor(getResources().getColor(R.color.colorStroke));
+        mPaint.setColor(getResources().getColor(R.color.deep_sky_blue));
     }
 
     private void drawGuideText() {
-        mPaint.setColor(getResources().getColor(R.color.colorGuideText));
+        mPaint.setColor(getResources().getColor(R.color.deep_sky_blue));
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setStrokeWidth(3);
         mPaint.setTextSize(20.0f * getResources().getDisplayMetrics().scaledDensity);
@@ -71,7 +71,7 @@ public class WritingView extends View {
 
     public void clear() {
         mPath.reset();
-        mCanvas.drawColor(getResources().getColor(R.color.colorCanvas));
+        mCanvas.drawColor(getResources().getColor(R.color.deep_sky_blue));
         drawGuideText();
         initPaint();
         invalidate();

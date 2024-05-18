@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
@@ -33,10 +34,16 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
-
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
+    viewBinding {
+        enable = true
+    }
 }
 
 dependencies {
@@ -45,7 +52,22 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    // If you want to add SweetAlert
+    implementation(libs.library)
+    //for face
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    // If you want to add CameraX
+    implementation(libs.camera.core)
+    implementation(libs.camera.camera2)
+    implementation(libs.camera.lifecycle)
+    implementation(libs.camera.video)
+    implementation(libs.camera.view)
+    implementation(libs.camera.mlkit.vision)
+    implementation(libs.camera.extensions)
+    // If you want to add Camera
+
+
 }

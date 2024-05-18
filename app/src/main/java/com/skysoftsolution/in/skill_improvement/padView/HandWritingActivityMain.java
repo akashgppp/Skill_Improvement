@@ -41,7 +41,7 @@ public class HandWritingActivityMain extends AppCompatActivity {
         });
 
             copyResourceToStorage();
-            //initialize();
+           // initialize();
 
 
 

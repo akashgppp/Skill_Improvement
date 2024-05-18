@@ -10,7 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.skysoftsolution.in.skill_improvement.padView.HandWritingActivityMain;
+import com.skysoftsolution.in.skill_improvement.dashBoard.DashBoardActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent mIntent = new Intent(MainActivity.this, HandWritingActivityMain.class);
+                Intent mIntent = new Intent(MainActivity.this, DashBoardActivity.class);
                 mIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 mIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(mIntent);
