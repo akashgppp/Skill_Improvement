@@ -54,8 +54,21 @@ dependencies {
     implementation(libs.constraintlayout)
     // If you want to add SweetAlert
     implementation(libs.library)
-    //for face
+    implementation(libs.butterknife)
+    implementation(libs.tensorflow.lite)
+    implementation(libs.tensorflow.tensorflow.lite)
+    implementation(libs.face.detection)
+    implementation(libs.rxandroid)
+    implementation(libs.converter.gson)
+    implementation(libs.lifecycle.viewmodel.ktx)
+    implementation(libs.lifecycle.livedata.ktx)
+    implementation(libs.lifecycle.compiler)
+    implementation(libs.room.ktx)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.guava)
 
+    //for face
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

@@ -20,6 +20,7 @@ class DashBoardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDashBoardBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
         //  DateAndTimeWork();
         viewModel.userList.observe(this, Observer { userList ->
             // Update UI with user list data
@@ -35,6 +36,8 @@ class DashBoardActivity : AppCompatActivity() {
         viewModel.addModule(newUser)
         val newUser3 = ModuleForUse(3, "Camera X ", R.drawable.baseline_camera_24)
          viewModel.addModule(newUser3)
+        val newUser4 = ModuleForUse(4, "Face Detection", R.drawable.ic_detection)
+        viewModel.addModule(newUser4)
     }
     /*    private fun DateAndTimeWork() {
             binding.TimeCurrent.format12Hour = "hh:mm aa"

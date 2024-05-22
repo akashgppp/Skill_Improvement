@@ -7,4 +7,12 @@
     <string name="recognize">Recognize</string>
     <string name="clear">Clear</string>
     <string name="writeHere">Write here.</string>
+    <string name="please_wait">कृपया प्रतीक्षा करें...</string>
+    <string name="nointernet">इंटरनेट कनेक्टिविटी नहीं हैं</string>
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+    <string name="saved_successfully">सफ़लतापूर्वक सुरक्षित हुआ</string>
+    <string name="plzclickthreephoto_offace">कृपया अपनी 3 फोटो क्लिक करें</string>
+    <string name="eye_blink_please">कृपया कैमरा के पास आकर अपनी आँखों को झपकाएं</string>
+    <string name="takeAttendance"> उपस्थिति लें </string>
+    <string name="remove_success">फ़ोटो सफ़लतापूर्वक हटाई गई..</string>
 </resources>

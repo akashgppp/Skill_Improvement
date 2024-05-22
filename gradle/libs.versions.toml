@@ -16,7 +16,22 @@ cameraView = "1.4.0-beta01"
 cameraMlkitVision = "1.4.0-beta01"
 cameraExtensions = "1.4.0-beta01"
 library = "1.6.2"
-
+butterknife = "10.2.3"
+tensorflowLite = "2.4.0"
+tensorflowLiteVersion = "0.0.0-nightly"
+playServicesMlkitFaceDetection = "17.1.0"
+composePreviewRenderer = "0.0.1-alpha01"
+faceDetection = "16.1.6"
+rxjava = "3.1.8"
+rxandroid = "2.0.2"
+converterGson = "2.11.0"
+lifecycleViewmodelKtx = "2.8.0"
+lifecycleLivedataKtx = "2.8.0"
+lifecycleCompiler = "2.8.0"
+roomKtx = "2.7.0-alpha02"
+kotlinxCoroutinesCore = "1.8.1"
+kotlinxCoroutinesAndroid = "1.8.1"
+guava = "33.2.0-jre"
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -33,7 +48,20 @@ camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "
 camera-mlkit-vision = { group = "androidx.camera", name = "camera-mlkit-vision", version.ref = "cameraMlkitVision" }
 camera-extensions = { group = "androidx.camera", name = "camera-extensions", version.ref = "cameraExtensions" }
 library = { group = "com.github.f0ris.sweetalert", name = "library", version.ref = "library" }
-
+butterknife = { group = "com.jakewharton", name = "butterknife", version.ref = "butterknife" }
+tensorflow-lite = { group = "org.tensorflow", name = "tensorflow-lite", version.ref = "tensorflowLite" }
+tensorflow-tensorflow-lite = { group = "org.tensorflow", name = "tensorflow-lite", version.ref = "tensorflowLiteVersion" }
+compose-preview-renderer = { group = "com.android.tools.compose", name = "compose-preview-renderer", version.ref = "composePreviewRenderer" }
+face-detection = { group = "com.google.mlkit", name = "face-detection", version.ref = "faceDetection" }
+rxandroid = { group = "io.reactivex.rxjava2", name = "rxandroid", version.ref = "rxandroid" }
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "converterGson" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+lifecycle-compiler = { group = "androidx.lifecycle", name = "lifecycle-compiler", version.ref = "lifecycleCompiler" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+guava = { group = "com.google.guava", name = "guava", version.ref = "guava" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

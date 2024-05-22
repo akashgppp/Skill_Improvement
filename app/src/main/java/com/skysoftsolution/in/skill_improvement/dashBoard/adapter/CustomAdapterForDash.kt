@@ -10,9 +10,15 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.skysoftsolution.`in`.paymentintegration.dashboard.entity.DashBoardModule
-import com.skysoftsolution.`in`.skill_improvement.MainActivity
+import com.skysoftsolution.`in`.skill_improvement.CameraX.CCameraActivity
 import com.skysoftsolution.`in`.skill_improvement.R
+import com.skysoftsolution.`in`.skill_improvement.attendance.MainActivity
+import com.skysoftsolution.`in`.skill_improvement.attendance.userRegistration.RegistrationActivity
+import com.skysoftsolution.`in`.skill_improvement.attendance.userRegistration.user_dash_board
+import com.skysoftsolution.`in`.skill_improvement.faceWork.CameraActivity
 import com.skysoftsolution.`in`.skill_improvement.padView.HandWritingActivityMain
+import com.skysoftsolution.`in`.skill_improvement.videoRecorderExamPattern.Video_Recorder_Activity
+import com.skysoftsolution.`in`.skill_improvement.videoRecorderExamPattern.activity.DetectorForVideoActivity
 
 class CustomAdapterForDash(private val context: Context, private val dataList: DashBoardModule) : BaseAdapter() {
 
@@ -52,7 +58,45 @@ class CustomAdapterForDash(private val context: Context, private val dataList: D
                 })
                 Toast.makeText(context,"Handwriting",Toast.LENGTH_SHORT).show();
             }else  if(dataList.userList[position].id.toString().equals("2")){
-                Toast.makeText(context,"Video Recorder",Toast.LENGTH_SHORT).show();
+                val intent = Intent(
+                    context,
+                    DetectorForVideoActivity::class.java
+                )
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(intent)
+            }else  if(dataList.userList[position].id.toString().equals("3")){
+                val intent = Intent(
+                    context,
+                    CameraActivity::class.java
+                )
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(intent)
+            }else  if(dataList.userList[position].id.toString().equals("4")){
+                val intent = Intent(
+                    context,
+                    user_dash_board::class.java
+                )
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(intent)
+            }else  if(dataList.userList[position].id.toString().equals("5")){
+                val intent = Intent(
+                    context,
+                    RegistrationActivity::class.java
+                )
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(intent)
+            }else  if(dataList.userList[position].id.toString().equals("6")){
+                val intent = Intent(
+                    context,
+                    MainActivity::class.java
+                )
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(intent)
             }
         }
         return convertView!!

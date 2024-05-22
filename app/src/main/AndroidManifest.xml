@@ -2,6 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +28,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Skill_Improvement"
         tools:targetApi="31">
+        <activity
+            android:name=".videoRecorderExamPattern.activity.DetectorForVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".videoRecorderExamPattern.activity.ViCameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".videoRecorderExamPattern.Video_Recorder_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".attendance.userRegistration.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".attendance.userRegistration.user_dash_board"
+            android:exported="false" />
+        <activity
+            android:name=".attendance.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CameraX.CCameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".faceWork.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".faceWork.DetectorActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".myscript.MyScriptActivity"
             android:exported="false" />
@@ -30,6 +74,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".videoRecorderExamPattern.service.VideoJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
     </application>
 
 </manifest>
