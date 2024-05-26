@@ -11,8 +11,8 @@ android {
         applicationId = "com.skysoftsolution.in.skill_improvement"
         minSdk = 26
         targetSdk = 34
-        versionCode = 2
-        versionName = "1.0.0.2"
+        versionCode = 1
+        versionName = "1.0"
         ndk {
             abiFilters.add("armeabi-v7a")
         }
@@ -54,26 +54,8 @@ dependencies {
     implementation(libs.constraintlayout)
     // If you want to add SweetAlert
     implementation(libs.library)
-    implementation(libs.butterknife)
-    implementation(libs.tensorflow.lite)
-    implementation(libs.tensorflow.tensorflow.lite)
-    implementation(libs.face.detection)
-    implementation(libs.rxandroid)
-    implementation(libs.converter.gson)
-    implementation(libs.lifecycle.viewmodel.ktx)
-    implementation(libs.lifecycle.livedata.ktx)
-    implementation(libs.lifecycle.compiler)
-    implementation(libs.room.ktx)
-    implementation(libs.kotlinx.coroutines.core)
-    implementation(libs.kotlinx.coroutines.android)
-    implementation(libs.guava)
-    implementation(libs.shortcutbadger)
-    implementation(libs.work.runtime)
-    implementation(libs.signature.view)
-    implementation(libs.colorpicker)
-    implementation(libs.pullrefreshlayout.library)
-
     //for face
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
