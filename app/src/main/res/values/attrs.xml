@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="SignatureView">
+        <attr name="customAttribute" format="string" />
+        <!-- Define other attributes as needed -->
+    </declare-styleable>
+</resources>
